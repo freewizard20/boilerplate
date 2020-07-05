@@ -9,6 +9,7 @@ import AccordionSummary from "@material-ui/core/AccordionSummary";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import ControlledAccordions from "./ControlledAccordions";
+import "./feedback.css";
 
 const useStyles = makeStyles({
   root: {
@@ -16,6 +17,7 @@ const useStyles = makeStyles({
     maxWidth: 720,
     margin: "20px auto",
     textAlign: "left",
+    padding: 0,
   },
   bullet: {
     display: "inline-block",
@@ -54,11 +56,11 @@ export default function Feedback() {
   return (
     <>
       <Card className={classes.root}>
-        <CardContent>
-          <h2 className="title">사후평가</h2>
-          <h3 className="subtitle">진행중 거래</h3>
+        <CardContent style={{ padding: 0 }}>
+          <h2 className="title-feedback">사후평가</h2>
+          <h3 className="subtitle-feedback">진행중 거래</h3>
 
-          <h3 className="subtitle">완료된 거래</h3>
+          <h3 className="subtitle-feedback">완료된 거래</h3>
           <ControlledAccordions />
         </CardContent>
       </Card>
