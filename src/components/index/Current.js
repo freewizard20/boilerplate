@@ -100,6 +100,12 @@ export default function Feedback() {
             <div className="index-details-scenario">
               <h3 className="subtitle-feedback" style={{ marginTop: "0px" }}>
                 매매일지
+                <button
+                  className={classes.settings}
+                  style={{ marginTop: "-10px" }}
+                >
+                  <CreateIcon />
+                </button>
               </h3>
               <ul className="scenario-list">
                 <li>10200, $10000 BUY</li>

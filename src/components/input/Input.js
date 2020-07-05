@@ -134,7 +134,15 @@ export default function Input() {
                 />
               </li>
             </ul>
-            <h3 className="subtitle">시나리오</h3>
+            <h3 className="subtitle">
+              시나리오
+              <button
+                className={classes.settings}
+                style={{ top: "4px", left: "2px" }}
+              >
+                <CreateIcon />
+              </button>
+            </h3>
             <ul className="scenario-list">
               <li>
                 10200, $10000 BUY
