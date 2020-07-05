@@ -7,6 +7,7 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import { withTheme } from '@material-ui/styles';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -32,7 +33,7 @@ export default function Header() {
                         <MenuIcon style={{ color: "white" }} />
                     </IconButton>
                     <Typography variant="h6" className={classes.title}>
-                        Tradewise
+                        <Link style={{ textDecoration: "none", color: "white" }} to="/">Tradewise</Link>
                     </Typography>
                     <Button color="inherit" style={{ color: "white" }}>Login</Button>
                 </Toolbar>
