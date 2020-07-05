@@ -46,7 +46,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function SimpleCard() {
+export default function Input() {
   const classes = useStyles();
 
   return (

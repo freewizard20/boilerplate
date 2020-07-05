@@ -25,7 +25,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function SimpleCard() {
+export default function Index() {
   const classes = useStyles();
 
   return (

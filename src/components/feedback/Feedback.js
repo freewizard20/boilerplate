@@ -1,16 +1,14 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
-import Button from "@material-ui/core/Button";
-import Typography from "@material-ui/core/Typography";
-import Container from "@material-ui/core/Container";
-import Divider from "@material-ui/core/Divider";
-import CreateIcon from "@material-ui/icons/Create";
-import TextField from "@material-ui/core/TextField";
-import Fab from "@material-ui/core/Fab";
 import AddIcon from "@material-ui/icons/Add";
+import Accordion from "@material-ui/core/Accordion";
+import AccordionDetails from "@material-ui/core/AccordionDetails";
+import AccordionSummary from "@material-ui/core/AccordionSummary";
+import Typography from "@material-ui/core/Typography";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import ControlledAccordions from "./ControlledAccordions";
 
 const useStyles = makeStyles({
   root: {
@@ -45,18 +43,23 @@ const useStyles = makeStyles({
   },
 });
 
-export default function SimpleCard() {
+export default function Feedback() {
   const classes = useStyles();
+  const [expanded, setExpanded] = React.useState(false);
+
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
+  };
 
   return (
     <>
       <Card className={classes.root}>
         <CardContent>
-          <div className="my-container">
-            <h2 className="title">사후평가</h2>
-            <h3 className="subtitle">진행중 거래</h3>
-            <h3 className="subtitle">완료된 거래</h3>
-          </div>
+          <h2 className="title">사후평가</h2>
+          <h3 className="subtitle">진행중 거래</h3>
+
+          <h3 className="subtitle">완료된 거래</h3>
+          <ControlledAccordions />
         </CardContent>
       </Card>
     </>
