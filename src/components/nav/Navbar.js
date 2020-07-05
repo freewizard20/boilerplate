@@ -6,6 +6,7 @@ import RestoreIcon from '@material-ui/icons/Restore';
 import { Link } from "react-router-dom";
 import CreateIcon from "@material-ui/icons/Create";
 import MenuBookIcon from "@material-ui/icons/MenuBook";
+import ShowChartIcon from '@material-ui/icons/ShowChart';
 
 const useStyles = makeStyles({
     root: {
@@ -39,7 +40,7 @@ export default function Navbar() {
             showLabels
             className={classes.root}
         >
-            <BottomNavigationAction component={Link} to="/" label="지수" icon={<RestoreIcon />} />
+            <BottomNavigationAction component={Link} to="/" label="지수" icon={<ShowChartIcon />} />
             <BottomNavigationAction component={Link} to="/input" label="새 시나리오" icon={<CreateIcon />} />
             <BottomNavigationAction component={Link} to="feedback" label="사후평가" icon={<MenuBookIcon />} />
         </BottomNavigation>

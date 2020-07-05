@@ -13,3 +13,24 @@
     width: 100%;
     margin-top: 0px;
 }
+
+.scenario-list{
+    line-height:1.7em;
+    font-size: 17px;
+}
+
+.scenario-input{
+    line-height: 1.5em;
+    width: 90%;
+    font-size: 16px;
+}
+
+.calculation-list{
+    line-height: 1.9em;
+    font-size: 17px;
+}
+
+.calculation-input{
+    line-height: 1.4em;
+    font-size: 16px;
+}
