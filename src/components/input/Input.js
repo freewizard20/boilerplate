@@ -6,6 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
+import Divider from '@material-ui/core/Divider';
 
 const useStyles = makeStyles({
     root: {
@@ -34,10 +35,14 @@ export default function SimpleCard() {
         <>
             <Card className={classes.root}>
                 <CardContent>
-                    <Typography variant="h5" component="p">
-                        새 시나리오(현황, 원칙, 자문자답, 시나리오)
-                    </Typography>
-
+                    <div className="my-container">
+                        <h2 className="title">새 시나리오</h2>
+                        <h3 className="subtitle">투자원칙</h3>
+                        <ul className="principle-list">
+                            <li><button className="principal-item">주식을 절대 얼마 이하로 팔지 마라.</button></li>
+                            <li><button className="principal-item green">확률을 고려하고 손절매해라.</button></li>
+                        </ul>
+                    </div>
                 </CardContent>
             </Card>
         </>
