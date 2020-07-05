@@ -5,12 +5,14 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import Container from '@material-ui/core/Container';
 
 const useStyles = makeStyles({
     root: {
         minWidth: 275,
         maxWidth: 720,
-        margin: "20px auto"
+        margin: "20px auto",
+        textAlign: "left"
     },
     bullet: {
         display: 'inline-block',
@@ -33,8 +35,9 @@ export default function SimpleCard() {
             <Card className={classes.root}>
                 <CardContent>
                     <Typography variant="h5" component="p">
-                        새 시나리오
+                        새 시나리오(현황, 원칙, 자문자답, 시나리오)
                     </Typography>
+
                 </CardContent>
             </Card>
         </>

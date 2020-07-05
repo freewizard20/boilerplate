@@ -3,9 +3,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import RestoreIcon from '@material-ui/icons/Restore';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
 import { Link } from "react-router-dom";
+import CreateIcon from "@material-ui/icons/Create";
+import MenuBookIcon from "@material-ui/icons/MenuBook";
 
 const useStyles = makeStyles({
     root: {
@@ -40,8 +40,8 @@ export default function Navbar() {
             className={classes.root}
         >
             <BottomNavigationAction component={Link} to="/" label="지수" icon={<RestoreIcon />} />
-            <BottomNavigationAction component={Link} to="/input" label="새 시나리오" icon={<FavoriteIcon />} />
-            <BottomNavigationAction component={Link} to="feedback" label="사후평가" icon={<LocationOnIcon />} />
+            <BottomNavigationAction component={Link} to="/input" label="새 시나리오" icon={<CreateIcon />} />
+            <BottomNavigationAction component={Link} to="feedback" label="사후평가" icon={<MenuBookIcon />} />
         </BottomNavigation>
     );
 }
