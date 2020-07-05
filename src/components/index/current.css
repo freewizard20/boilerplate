@@ -1,0 +1,15 @@
+.index-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.index-details-main {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 600px) {
+  .index-details-main {
+    flex-direction: column;
+  }
+}

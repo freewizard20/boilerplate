@@ -7,10 +7,11 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
 import Divider from "@material-ui/core/Divider";
+import AddIcon from "@material-ui/icons/Add";
+import RemoveIcon from "@material-ui/icons/Remove";
 import CreateIcon from "@material-ui/icons/Create";
 import TextField from "@material-ui/core/TextField";
 import Fab from "@material-ui/core/Fab";
-import AddIcon from "@material-ui/icons/Add";
 import "./input.css";
 
 const useStyles = makeStyles({
@@ -135,22 +136,56 @@ export default function Input() {
             </ul>
             <h3 className="subtitle">시나리오</h3>
             <ul className="scenario-list">
-              <li>10200, $10000 BUY</li>
-              <li>10000, $10000 BUY</li>
+              <li>
+                10200, $10000 BUY
+                {/* <button
+                  className="removebutton"
+                  style={{
+                    marginLeft: "8px",
+                    position: "relative",
+                    top: "5px",
+                  }}
+                >
+                  <RemoveIcon style={{ color: "white" }} />
+                </button> */}
+              </li>
+              <li>
+                10000, $10000 BUY
+                {/* <button
+                  className="removebutton"
+                  style={{
+                    marginLeft: "8px",
+                    position: "relative",
+                    top: "5px",
+                  }}
+                >
+                  <RemoveIcon style={{ color: "white" }} />
+                </button> */}
+              </li>
               <li>9800, $10000 BUY</li>
               <li>9500, $30000 손절매</li>
               <li>
                 <input className="scenario-input" type="text"></input>
+                <button
+                  className="addbutton"
+                  style={{
+                    marginLeft: "8px",
+                    position: "relative",
+                    top: "5px",
+                  }}
+                >
+                  <AddIcon style={{ color: "white", marginTop: "2px" }} />
+                </button>
               </li>
             </ul>
-            <Fab
+            {/* <Fab
               size="small"
               color="primary"
               aria-label="add"
               className={classes.margin}
             >
               <AddIcon style={{ color: "white", marginTop: "6px" }} />
-            </Fab>
+            </Fab> */}
             <h3 className="subtitle">손익계산</h3>
             <ul className="calculation-list">
               <li>

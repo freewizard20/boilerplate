@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import Header from "./components/nav/Header";
 import Navbar from "./components/nav/Navbar";
-import Index from "./components/index/Index";
+import Current from "./components/index/Current";
 import Input from "./components/input/Input";
 import Feedback from "./components/feedback/Feedback";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -14,7 +14,7 @@ function App() {
         <Header />
         <Switch>
           <Route path="/" exact component={Input} />
-          <Route path="/input" exact component={Index} />
+          <Route path="/current" exact component={Current} />
           <Route path="/feedback" exact component={Feedback} />
         </Switch>
         <Navbar />

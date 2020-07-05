@@ -24,7 +24,7 @@ export default function Navbar() {
   useEffect(() => {
     if (window.location.href.toString().includes("feedback")) {
       setValue(2);
-    } else if (window.location.href.toString().includes("input")) {
+    } else if (window.location.href.toString().includes("current")) {
       setValue(1);
     } else {
       setValue(0);
@@ -48,7 +48,7 @@ export default function Navbar() {
       />
       <BottomNavigationAction
         component={Link}
-        to="/input"
+        to="/current"
         label="진행중 거래"
         icon={<ShowChartIcon />}
       />
