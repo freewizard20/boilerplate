@@ -10,6 +10,7 @@ import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import ControlledAccordions from "./ControlledAccordions";
 import "./feedback.css";
+import Divider from "@material-ui/core/Divider";
 
 const useStyles = makeStyles({
   root: {
@@ -58,10 +59,7 @@ export default function Feedback() {
       <Card className={classes.root}>
         <CardContent style={{ padding: 0 }}>
           <h2 className="title-feedback">사후평가</h2>
-          <h3 className="subtitle-feedback">진행중 거래</h3>
-
-          <h3 className="subtitle-feedback">완료된 거래</h3>
-          <ControlledAccordions />
+          <Divider />
         </CardContent>
       </Card>
     </>
