@@ -31,8 +31,8 @@ const useStyles = makeStyles({
     },
     settings: {
         position: "relative",
-        top: "3px",
-        left: "1px",
+        top: "3.5px",
+        left: "-2px",
         color: "#209cee",
         borderRadius: "50%",
         backgroundColor: "white",
@@ -62,6 +62,42 @@ export default function SimpleCard() {
                         <ul className="principle-list">
                             <li><button className="principal-item">주식을 절대 얼마 이하로 팔지 마라.</button></li>
                             <li><button className="principal-item green">확률을 고려하고 손절매해라.</button></li>
+                        </ul>
+                        <h3 className="subtitle">자문자답 <button className={classes.settings}><CreateIcon /></button></h3>
+                        <ul className="self-list">
+                            <li>
+                                <h4 className="self-list-label">똥은 쌌는지?</h4>
+                                <TextField
+                                    id="outlined-multiline-static"
+                                    className="self-textfield"
+                                    label="입력"
+                                    multiline
+                                    rows={2}
+                                    variant="outlined"
+                                />
+                            </li>
+                            <li>
+                                <h4 className="self-list-label">똥은 쌌는지?</h4>
+                                <TextField
+                                    id="outlined-multiline-static"
+                                    className="self-textfield"
+                                    label="입력"
+                                    multiline
+                                    rows={2}
+                                    variant="outlined"
+                                />
+                            </li>
+                            <li>
+                                <h4 className="self-list-label">똥은 쌌는지?</h4>
+                                <TextField
+                                    id="outlined-multiline-static"
+                                    className="self-textfield"
+                                    label="입력"
+                                    multiline
+                                    rows={2}
+                                    variant="outlined"
+                                />
+                            </li>
                         </ul>
                     </div>
                 </CardContent>
